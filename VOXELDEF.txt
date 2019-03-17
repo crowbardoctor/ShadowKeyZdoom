@@ -1,0 +1,9 @@
+CANDA =  "CANDA"
+{
+   Scale = 2.0
+}
+
+CHAIA =  "CHAIA"
+{
+   Scale = 0.80
+}

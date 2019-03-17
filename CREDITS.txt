@@ -1,0 +1,6 @@
+Realm667
+Decorate: Gothic, Sir Squidly
+GLDefs: Gothic
+Sprites: Bethesda Softworks, Raven Software, Monolith Productions, DonaldDuck
+Sprite Edit: Gothic
+Sounds: Raven Software, Bethesda Softworks

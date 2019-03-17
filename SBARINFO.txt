@@ -1,0 +1,73 @@
+height 42;
+monospacefonts true, "0";
+interpolatehealth true;
+
+statusbar normal
+{
+	drawimage "BARBACK", 0, 158;
+	drawimage "LTFCTOP", 0, 148;
+	drawimage "RTFCTOP", 290, 148;
+
+	//god mode
+	drawswitchableimage invulnerable, "GOD1", "nullimage", 16, 167;
+	drawswitchableimage invulnerable, "GOD2", "nullimage", 287, 167;
+
+	//health
+	drawimage "CHAINBAC", 0, 190;
+	gamemode singleplayer
+	{
+		drawgem wiggle, "CHAIN", "LIFEGEM2", 15, 23, 16, 2, 191;
+	}
+	gamemode deathmatch, cooperative, teamgame
+	{
+		drawgem wiggle, translatable, "CHAIN", "LIFEGEM2", 15, 23, 16, 2, 191;
+	}
+	drawimage "LTFACE", 0, 190;
+	drawimage "RTFACE", 276, 190;
+	drawshader 16, 10, horizontal, 19, 190;
+	drawshader 16, 10, horizontal, reverse, 278, 190;
+
+	//statbar
+	gamemode singleplayer, cooperative
+	{
+		drawimage "LIFEBAR", 34, 160;
+		drawimage "ARMCLEAR", 57, 171;
+		drawnumber 3, HUDFONT_RAVEN, untranslated, health, 87, 170, 1;
+	}
+	gamemode deathmatch, teamgame
+	{
+		drawimage "STATBAR", 34, 160;
+		drawimage "ARMCLEAR", 57, 171;
+		drawnumber 3, HUDFONT_RAVEN, untranslated, frags, 87, 170, 1;
+	}
+	drawimage "ARMCLEAR", 224, 171;
+	drawnumber 3, HUDFONT_RAVEN, untranslated, armor, 254, 170, 1;
+
+	//ammo
+	usessecondaryammo not
+	{
+		drawnumber 3, HUDFONT_RAVEN, untranslated, ammo1, 134, 162, 1;
+		drawimage ammoicon1, 123, 180, center;
+	}
+	usessecondaryammo
+	{
+		drawnumber 3, INDEXFONT_RAVEN, untranslated, ammo1, 137, 165;
+		drawnumber 3, INDEXFONT_RAVEN, untranslated, ammo2, 137, 177;
+		drawimage ammoicon1, 115, 169, center;
+		drawimage ammoicon2, 115, 180, center;
+	}
+
+	//keys
+	drawswitchableimage keyslot 3, "nullimage", "YKEYICON", 153, 164;
+	drawswitchableimage keyslot 1, "nullimage", "GKEYICON", 153, 172;
+	drawswitchableimage keyslot 2, "nullimage", "BKEYICON", 153, 180;
+
+	//inventory box
+	drawselectedinventory artiflash, INDEXFONT_RAVEN, 179, 160, 208, 182, untranslated, 1;
+}
+
+statusbar inventory
+{
+	drawimage "INVBAR", 34, 160;
+	drawinventorybar Heretic, noartibox, 7, INDEXFONT_RAVEN, 50, 160, 76, 182, untranslated, 1;
+}
