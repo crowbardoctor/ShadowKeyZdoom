@@ -1,0 +1,41 @@
+BOWREADY	BOWREADY
+ARROWNRM	ARROWNRM
+ARROWICE	ARROWICE
+ARROWFIR	ARROWFIR
+ARROWELE	ARROWELE
+IROWIMPC	IROWIMPC
+FROWIMPC	FROWIMPC
+EROWIMPC	EROWIMPC
+$limit IROWIMPC 0
+$limit FROWIMPC 0
+$limit EROWIMPC 0
+UNSPELL		UNSPELL
+//axe
+weapons/axecut SPLICE
+weapons/axebang CLANG
+weapons/axeswing SWISH
+silent DSEMPTY //only in new Zdooms
+//daggerfallSkeleton
+HellScreech   DGFALSCE
+DagfallAxeFall   DGFALAXF
+DagfallExplode   DGFALSEX
+$random YellPain { HellYell HellPain HellDeath }
+HellYell  DGFALYEL 
+HellPain  DGFALPIN
+HellDeath  DGFALDIE
+$random DagfallAxeR { DagfallAxe1 DagfallAxe2 DagfallAxe3 }
+DagfallAxe1   DGFALAX1
+DagfallAxe2   DGFALAX2
+DagfallAxe3   DGFALAX3
+$random DagfallBoneDrop { DagfallBoneR1 DagfallBoneR2 DagfallBoneR3 }
+DagfallBoneR1   DGFALBD1
+DagfallBoneR2   DGFALBD2
+DagfallBoneR3   DGFALBD3
+Rat/Squeek	DSRAT
+Rat/Active	DSRATIDL
+DSRATDI1	DSRATDI1
+DSRATDI2	DSRATDI2
+$random Rat/Death	{ DSRATDI1 DSRATDI2 }
+
+Rat/Bite	DSRATBIT
+Rat/Splat	DSRATPOP
