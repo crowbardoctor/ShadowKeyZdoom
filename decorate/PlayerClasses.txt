@@ -1,0 +1,42 @@
+actor Assasin : DoomPlayer
+{
+ scale 1
+ Player.DisplayName "Assasin"
+
+}
+
+actor Barbarian : DoomPlayer
+{
+ scale 1
+ Player.DisplayName "Barbarian"
+
+}
+
+actor Battlemage : DoomPlayer
+{
+ scale 1
+ Player.DisplayName "Battlemage"
+
+}
+
+actor Knight : DoomPlayer
+{
+ scale 1
+ Player.DisplayName "Knight"
+
+}
+
+actor Rouge : DoomPlayer
+{
+ scale 1
+ Player.DisplayName "Rouge"
+
+}
+
+actor SpellswordBreton : DoomPlayer
+{
+ scale 1
+ Player.DisplayName "Spellsword Breton"
+ Health 35
+//Magica 50
+}
